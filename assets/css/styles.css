@@ -1,11 +1,19 @@
+/* *{
+    margin:0
+} */
+
+html{
+    height:100%; 
+}
 body {
     color: #212529; 
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";   
     font-size: 1rem;
     font-weight: 400;
+    height:100%;
     line-height: 1.5;
     margin: 0;
-    text-align: left;    
+    text-align: left;        
 }
 h2 {
     font-weight: 300 !important;
@@ -17,6 +25,10 @@ h2 {
 }
 .navbar{
     background-color: #1e2e3d;
+    width:100%;
+    position: fixed;
+    z-index:10;
+    margin-top:35px;
 }
 #navigation-menu a:hover{
     color:white;
@@ -26,4 +38,32 @@ h2 {
     font-family: 'Mr Dafoe',cursive;
     font-size: 40px;
     margin-right:100px;
+}
+#pageFooter{
+    background-color: #1e2e3d;
+    color:#6c96c6;
+    padding-bottom: 10px;
+}
+.img-fluid{
+    height: 35px;
+    width:100%;
+    position:fixed;
+    z-index:10;
+}
+.wrapper{
+   display: block;    
+   margin: 0 auto -110px;
+   
+   min-height:100%;
+   padding-bottom:100px;
+   padding-top:135px;
+   
+}
+img{
+   
+    width:100%;
+    height:auto;
+}
+#imgChris{
+    max-width: 300px;
 }
