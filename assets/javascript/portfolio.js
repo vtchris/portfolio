@@ -8,26 +8,24 @@ document.addEventListener('click', function (event) {
     if (!event.target.matches('.js_nav')) return;
 
     event.preventDefault();
+    clear_container();
 
     switch (event.target.innerText.toLowerCase()){
-        case "about":
-            clear_container();
+        case "about":            
             display_about();
         break;
         case "contact":
-            clear_container();
-            display_contact();
+            display_contact();           
         break;
         case "portfolio":
-            clear_container();
-            display_portfolio();
+            display_portfolio();            
         break;
     }	    
-
+ 
 }, false);
 
 //Fire up the default page
-display_portfolio()
+display_portfolio();
 
 function display_about(){
     
@@ -44,6 +42,7 @@ function display_about(){
     //Create 1st Col
     let col1  =  document.createElement('div');    
     col1.classList.add('col-md-3');
+    col1.classList.add('text-center');
 
     //Add Image
     let img = document.createElement('img');
@@ -60,10 +59,10 @@ function display_about(){
 
     //Add paragraphs
     let p1 = document.createElement('p');
-    p1.innerText = "I'm Chris Ross - I enjoy web development and I'm currently in a Coding Bootcamp at the Unicversity of North Carolina Charlotte to improve my skills. I like to create sites with a clean, uncluttered, and intuitive look. I look forward to strengthening and improving my skill set!"
+    p1.innerText = "I'm Chris Ross - I enjoy web development and I'm currently in a Coding Bootcamp at the University of North Carolina Charlotte to improve my skills. I like to create sites with a clean, uncluttered, and intuitive look. I look forward to strengthening and improving my skill set!"
     col2.appendChild(p1)
     let p2 = document.createElement('p');
-    p2.innerText = "I am originally from Vermont and have lived and worked in several cities and states in New England. I recently moved to South Carolina near Charlotte, NC. I also enjoy traveling, and as a glutten for punishment, I attempt to play the violin."
+    p2.innerText = "I am originally from Vermont and have lived and worked in several cities and states in New England. I recently moved to South Carolina near Charlotte, NC. I also enjoy traveling, and as a glutton for punishment, I attempt to play the violin."
     col2.appendChild(p2);
     row.appendChild(col2);
     
@@ -91,7 +90,7 @@ function display_about(){
     gitBtn.classList.add('btn-block');
     gitBtn.setAttribute('href','https://github.com/vtchris');
     gitBtn.setAttribute('target','_blank');
-    gitBtn.innerHTML = "<span class='fab fa-github mr-1'></span>Follow on Github!";
+    gitBtn.innerHTML = "<span class='fab fa-github mr-2'></span>Follow on Github!";
     cardBody.appendChild(gitBtn);
 
     //LinkedIn Button
@@ -102,7 +101,7 @@ function display_about(){
     linkBtn.classList.add('btn-block');   
     linkBtn.setAttribute('href','https://www.linkedin.com/in/chrisross2357/');
     linkBtn.setAttribute('target','_blank');
-    linkBtn.innerHTML = "<span class='fab fa-linkedin mr-1'></span>View LinkedIn profile!";
+    linkBtn.innerHTML = "<span class='fab fa-linkedin mr-2'></span>View LinkedIn profile!";
     cardBody.appendChild(linkBtn);
 
     //Twitter Button
@@ -113,7 +112,7 @@ function display_about(){
     twitterBtn.classList.add('btn-block');
     twitterBtn.setAttribute('href','https://twitter.com/vtchris_2357');
     twitterBtn.setAttribute('target','_blank');
-    twitterBtn.innerHTML = "<span class='fab fa-twitter mr-1'></span>Follow on Twitter!";
+    twitterBtn.innerHTML = "<span class='fab fa-twitter mr-2'></span>Follow on Twitter!";
     cardBody.appendChild(twitterBtn);
         
     card.appendChild(cardHeader);
@@ -126,10 +125,71 @@ function display_about(){
 
 }
 function display_contact(){
+    
     let header = document.createElement('h2');
     header.classList.add('mb-3');
-    header.innerText = 'Contact'
+    header.innerText = 'Contact';
     container.appendChild(header);
+
+    let form = document.createElement('form');
+    form.setAttribute('action','https://formspree.io/vtchris.2357@gmail.com');
+    form.setAttribute('method','POST');
+    
+    //Name Group
+    let nameGroup = document.createElement('div');
+    nameGroup.classList.add('form-group');
+
+    let newLabel = document.createElement('label');
+    newLabel.innerText = 'Name';
+    let newTextbox = document.createElement('input');
+    newTextbox.classList.add('form-control');
+    newTextbox.setAttribute('name','name');
+    newTextbox.setAttribute('placeholder','John Doe');
+
+    nameGroup.appendChild(newLabel);
+    nameGroup.appendChild(newTextbox);
+    form.appendChild(nameGroup);
+
+    //Email Group
+    let emailGroup = document.createElement('div');
+    emailGroup.classList.add('form-group');
+
+    newLabel = document.createElement('label');
+    newLabel.innerText = 'Email';
+    newTextbox = document.createElement('input');
+    newTextbox.classList.add('form-control');
+    newTextbox.setAttribute('name','email');
+    newTextbox.setAttribute('placeholder','name@gmail.com');
+
+    emailGroup.appendChild(newLabel);
+    emailGroup.appendChild(newTextbox);
+    form.appendChild(emailGroup);
+
+    //Message Group
+    let messageGroup = document.createElement('div');
+    messageGroup.classList.add('form-group');
+
+    newLabel = document.createElement('label');
+    newLabel.innerText = 'Message';
+    let newTextarea = document.createElement('textarea');
+    newTextarea.classList.add('form-control');
+    newTextarea.setAttribute('name','message-layout-port');
+    newTextarea.setAttribute('placeholder','Message...');
+
+    let newSubmit = document.createElement('button');
+    newSubmit.classList.add('btn');
+    newSubmit.classList.add('btn-primary');
+    newSubmit.classList.add('mt-3');
+    newSubmit.innerText = "Submit";
+
+    messageGroup.appendChild(newLabel);
+    messageGroup.appendChild(newTextarea);
+    messageGroup.appendChild(newSubmit);
+    form.appendChild(messageGroup);
+
+    container.appendChild(form);
+
+    document.getElementsByName('name')[0].focus();
 }
 function display_portfolio() {
 
@@ -194,10 +254,11 @@ function display_portfolio() {
         cardFooter.classList.add('text-center');
 
         let gitButton = document.createElement('a');
-        gitButton.classList.add('github-button');
+        gitButton.classList.add('btn');
+        gitButton.classList.add('btn-secondary');
         gitButton.setAttribute('href',PROJECTS[i].url_gitrepo);
-        gitButton.setAttribute('data-size','large');
-        gitButton.innerText = "View Git Repo!"
+        gitButton.setAttribute('target','repo');
+        gitButton.innerHTML = "<span class='fab fa-github mr-1'></span>View Git Repo!"
         cardFooter.appendChild(gitButton);
 
         cardBody.appendChild(cardHeader);
@@ -208,6 +269,7 @@ function display_portfolio() {
         cardDeck.appendChild(card);
 
         cardCount++
+        
     }
 
     container.appendChild(cardDeck)
