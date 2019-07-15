@@ -25,6 +25,14 @@ PROJECTS.push(new Project(
     "https://vtchris.github.io/TriviaGame/"
 ));
 PROJECTS.push(new Project(
+    "Tip-4-Tat",
+    "Tip Calculator, this was my submission to a coding challenge from Career Services. My entry allowed for user specified rounding options, which are stored locally for future use, as well as a joke provided via API as a way to end a meal out on a light note!",
+    "tip.jpg",
+    "Tip-4-Tat Tip Calculator",
+    "https://github.com/vtchris/tipCalculator",
+    "https://vtchris.github.io/tipCalculator/"
+));
+PROJECTS.push(new Project(
     "X-Men RPG Game",
     "JavaScript role-playing game based on the X-Men, utilizing jQuery for DOM interactions.",
     "x.jpg",

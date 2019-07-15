@@ -12,7 +12,9 @@ body {
     text-align: left;        
 }
 h2 {
-    color: #4A77AA !important;
+    /* color:#17a2b8 !important; */
+    color:#9ac79a !important;
+    /* color: #4A77AA !important; */
     font-weight: 300 !important;    
 }
 img{       
@@ -47,6 +49,7 @@ img{
     max-width: 300px;
 }
 #navigation-menu a{
+    /* color:#17a2b8; */
     color:#9ac79a;
     /* color:#6c96c6; */
     text-decoration: none;
@@ -55,6 +58,7 @@ img{
     color:white;
 }
 #pageFooter{
+    /* color:#17a2b8; */
     color:#9ac79a;
     background-color: #1e2e3d;
     /* color:#6c96c6; */
