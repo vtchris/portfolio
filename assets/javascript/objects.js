@@ -19,7 +19,7 @@ PROJECTS.push(new Project(
 PROJECTS.push(new Project(
     "Sentenced: Trivia Game",
     "JavaScript bookish trivia game in which you guess the book from it's first sentence, game.",
-    "sentenced.jpeg",
+    "sentenced.jpg",
     "Sentenced Trivia Game",
     "https://github.com/vtchris/TriviaGame",
     "https://vtchris.github.io/TriviaGame/"
@@ -71,6 +71,22 @@ PROJECTS.push(new Project(
     "Bamazon Node Store",
     "https://github.com/vtchris/bamazon-node-app",
     "https://github.com/vtchris/bamazon-node-app"
+));
+PROJECTS.push(new Project(
+    "Node LIRI App",
+    "This application was modeled after SIRI and was developed with Node.js calling 3 different APIs. It utilizes inquirer for user interaction.",
+    "node-liri-app.jpg",
+    "Node LIRI App",
+    "https://github.com/vtchris/liri-node-app",
+    "https://github.com/vtchris/liri-node-app"
+));
+PROJECTS.push(new Project(
+    "Node Word Guess",
+    "This application was developed with Node.js calling. It utilizes inquirer for user interaction. This application was designed to reinforce object constructor skills",
+    "nodeWord.jpg",
+    "Node Word Guess App",
+    "https://github.com/vtchris/node-word-guess",
+    "https://github.com/vtchris/node-word-guess"
 ));
 //Project constructor
 function Project(name, description, image, imageAlt, url_gitrepo, url) {
