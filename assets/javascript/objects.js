@@ -41,6 +41,14 @@ PROJECTS.push(new Project(
     "https://vtchris.github.io/tipCalculator/"
 ));
 PROJECTS.push(new Project(
+    "Eat Da Burger",
+    "This application was developed using MySQL and the Model View Controller methodology.",
+    "burger.jpg",
+    "Eat Da Burger",
+    "https://github.com/vtchris/burger",
+    "https://fast-retreat-88730.herokuapp.com/"
+));
+PROJECTS.push(new Project(
     "X-Men RPG Game",
     "JavaScript role-playing game based on the X-Men, utilizing jQuery for DOM interactions.",
     "x.jpg",
@@ -82,7 +90,7 @@ PROJECTS.push(new Project(
 ));
 PROJECTS.push(new Project(
     "Node Word Guess",
-    "This application was developed with Node.js calling. It utilizes inquirer for user interaction. This application was designed to reinforce object constructor skills",
+    "This application was developed with Node.js calling. It utilizes inquirer for user interaction. This application was designed to reinforce object constructor skills.",
     "nodeWord.jpg",
     "Node Word Guess App",
     "https://github.com/vtchris/node-word-guess",
