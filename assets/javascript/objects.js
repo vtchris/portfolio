@@ -49,6 +49,14 @@ PROJECTS.push(new Project(
     "https://fast-retreat-88730.herokuapp.com/"
 ));
 PROJECTS.push(new Project(
+    "Scooby Snack Time!",
+    "This application is an update to Eat Da Burger. This update includes the use of Sequelize to make and join tables and add records.",
+    "scooby.jpg",
+    "Scooby Snack Time",
+    "https://github.com/vtchris/sequelizedBurger",
+    "https://quiet-sea-83148.herokuapp.com/"
+));
+PROJECTS.push(new Project(
     "X-Men RPG Game",
     "JavaScript role-playing game based on the X-Men, utilizing jQuery for DOM interactions.",
     "x.jpg",
