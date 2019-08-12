@@ -30,7 +30,7 @@ PROJECTS.push(new Project(
     "friend.jpg",
     "Friend Finder",
     "https://github.com/vtchris/friendFinder",
-    "https://lit-reaches-13845.herokuapp.com/"
+    "https://friend-finder-office.herokuapp.com/"
 ));
 PROJECTS.push(new Project(
     "Tip-4-Tat",
@@ -46,7 +46,7 @@ PROJECTS.push(new Project(
     "burger.jpg",
     "Eat Da Burger",
     "https://github.com/vtchris/burger",
-    "https://fast-retreat-88730.herokuapp.com/"
+    "https://order-da-burger.herokuapp.com/"
 ));
 PROJECTS.push(new Project(
     "Scooby Snack Time!",
