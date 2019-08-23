@@ -17,8 +17,16 @@ PROJECTS.push(new Project(
     "https://vtchris.github.io/RPS-Multiplayer/"
 ));
 PROJECTS.push(new Project(
+    "News Scraper",
+    "This full stack application uses axios and cheerio to scrape news articles from NPR.org. This site uses a Mongo database store articles and user comments.",
+    "scraper.jpg",
+    "NPR World News Scraper",
+    "https://github.com/vtchris/scrape-news",
+    "https://whats-new-scraper.herokuapp.com"
+));
+PROJECTS.push(new Project(
     "Sentenced: Trivia Game",
-    "JavaScript bookish trivia game in which you guess the book from it's first sentence, game.",
+    "JavaScript bookish trivia game in which you guess the book from it's first sentence, game. Highlights use of JavaScript timers.",
     "sentenced.jpg",
     "Sentenced Trivia Game",
     "https://github.com/vtchris/TriviaGame",
@@ -98,7 +106,7 @@ PROJECTS.push(new Project(
 ));
 PROJECTS.push(new Project(
     "Node Word Guess",
-    "This application was developed with Node.js calling. It utilizes inquirer for user interaction. This application was designed to reinforce object constructor skills.",
+    "This application was developed with Node.js. It utilizes inquirer for user interaction. This application was designed to reinforce object constructor skills.",
     "nodeWord.jpg",
     "Node Word Guess App",
     "https://github.com/vtchris/node-word-guess",
