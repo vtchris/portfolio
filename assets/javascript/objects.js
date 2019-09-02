@@ -18,11 +18,19 @@ PROJECTS.push(new Project(
 ));
 PROJECTS.push(new Project(
     "News Scraper",
-    "This full stack application uses axios and cheerio to scrape news articles from NPR.org. This site uses a Mongo database store articles and user comments.",
+    "This full stack application uses axios and cheerio to scrape news articles from NPR.org. This site uses a Mongo database to store articles and user comments.",
     "scraper.jpg",
     "NPR World News Scraper",
     "https://github.com/vtchris/scrape-news",
     "https://whats-new-scraper.herokuapp.com"
+));
+PROJECTS.push(new Project(
+    "World Domination - Step 1",
+    "React game in which you select your minions. Game uses react for layout and user interaction",
+    "minions.jpg",
+    "React World Domination Game",
+    "https://github.com/vtchris/clicky-game",
+    "https://world-domination-step1.herokuapp.com"
 ));
 PROJECTS.push(new Project(
     "Sentenced: Trivia Game",
@@ -62,7 +70,7 @@ PROJECTS.push(new Project(
     "scooby.jpg",
     "Scooby Snack Time",
     "https://github.com/vtchris/sequelizedBurger",
-    "https://quiet-sea-83148.herokuapp.com/"
+    "https://scooby-snack-time.herokuapp.com"
 ));
 PROJECTS.push(new Project(
     "X-Men RPG Game",
