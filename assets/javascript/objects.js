@@ -26,7 +26,7 @@ PROJECTS.push(new Project(
 ));
 PROJECTS.push(new Project(
     "World Domination - Step 1",
-    "React game in which you select your minions. Game uses react for layout and user interaction",
+    "React game in which you select your minions. Game uses react for layout and user interaction.",
     "minions.jpg",
     "React World Domination Game",
     "https://github.com/vtchris/clicky-game",
