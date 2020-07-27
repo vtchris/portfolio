@@ -1,7 +1,7 @@
 const PROJECTS = [];
 
 PROJECTS.push(new Project(
-    "Grub Whiz",
+    "Grub Wiz",
     "This resturant finding application uses APIs and was developed using agile methodology during a two week period on a team of four.",
     "GrubWiz.jpg",
     "Grub Whiz Restuarant Finder",
@@ -17,12 +17,12 @@ PROJECTS.push(new Project(
     "https://vtchris.github.io/RPS-Multiplayer/"
 ));
 PROJECTS.push(new Project(
-    "News Scraper",
-    "This full stack application uses axios and cheerio to scrape news articles from NPR.org. This site uses a Mongo database to store articles and user comments.",
-    "scraper.jpg",
-    "NPR World News Scraper",
-    "https://github.com/vtchris/scrape-news",
-    "https://whats-new-scraper.herokuapp.com"
+    "JAVA Banking API",
+    "This JAVA application uses RESTful APIs and MVC design pattern. Security is provided by a session cookie. Postman used to make endpoint calls.",
+    "changeBank.jpg",
+    "JAVA Banking API",
+    "https://github.com/vtchris/rocp-1-project-vtchris",
+    "https://github.com/vtchris/rocp-1-project-vtchris"
 ));
 PROJECTS.push(new Project(
     "World Domination - Step 1",
@@ -31,6 +31,14 @@ PROJECTS.push(new Project(
     "React World Domination Game",
     "https://github.com/vtchris/clicky-game",
     "https://world-domination-step1.herokuapp.com"
+));
+PROJECTS.push(new Project(
+    "News Scraper",
+    "This full stack application uses axios and cheerio to scrape news articles from NPR.org. This site uses a Mongo database to store articles and user comments.",
+    "scraper.jpg",
+    "NPR World News Scraper",
+    "https://github.com/vtchris/scrape-news",
+    "https://github.com/vtchris/scrape-news"
 ));
 PROJECTS.push(new Project(
     "Sentenced: Trivia Game",

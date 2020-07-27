@@ -59,7 +59,7 @@ function display_about(){
 
     //Add paragraphs
     let p1 = document.createElement('p');
-    p1.innerText = "I'm Chris Ross - I enjoy web development and I'm currently in a Coding Bootcamp at the University of North Carolina Charlotte to improve my skills. I like to create sites with a clean, uncluttered, and intuitive look. I look forward to strengthening and improving my skill set!"
+    p1.innerText = "I'm Chris Ross - I enjoy web development and I'm currently working on JAVA in a program offered by Revature. I like to create sites with a clean, uncluttered, and intuitive look. I look forward to strengthening and improving my skill set!"
     col2.appendChild(p1)
     let p2 = document.createElement('p');
     p2.innerText = "I am originally from Vermont and have lived and worked in several cities and states in New England. I recently moved to South Carolina near Charlotte, NC. I also enjoy traveling, and as a glutton for punishment, I attempt to play the violin."
